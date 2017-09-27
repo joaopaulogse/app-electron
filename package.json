@@ -1,0 +1,38 @@
+{
+  "name": "app-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "concurrently 'webpack-dev-server --progress --colors --inline --hot' 'electron .'",
+    "build": "webpack --progress -p",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "electron": "^1.7.8",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-multi": "^0.1.12",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.0"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
