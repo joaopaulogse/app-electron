@@ -1,7 +1,12 @@
 import React, {Component} from 'react'
-import 'modules/bootstrap/dist/css/bootstrap.min.css'
+
+import 'modules/materialize-css/dist/css/materialize.min.css'
 import 'modules/font-awesome/css/font-awesome.css'
+import 'modules/jquery/dist/jquery'
+
 import Header from '../templates/header'
+import Routes from '../main/routes'
+
 import {db} from '../../database'
 export default class App extends Component{
     
@@ -31,12 +36,7 @@ export default class App extends Component{
     
     render(){
         return (
-            <div>
-                <Header />
-                <button className='btn btn-primary' onClick={()=>this.janela()}>
-                    <i className='fa fa-google'></i>
-                </button>
-            </div>
+                <Routes/>
         )
     }
 }

@@ -1,20 +1,24 @@
-import React from 'react'
+import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
+export default class Header extends Component{
 
-export default props =>(
-    <nav className="navbar navbar-inverse bg-inverse">
-        <div className='container'>
-            <div className='navbar-header'>
-                <a href="#" className='navbar-brand'>
-                    <i className='fa fa-calendar-check-o'></i> System
-                </a>
-            </div>
-
-            <div className="navbar-collapse collapse" id='navbar'>
-                <ul className='nav navbar-nav'>
-                    <li><a href="#/todos">Tarefas</a></li>
-                    <li><a href="#/about">Sobre</a></li>
+    constructor(props){
+        super(props)
+    }
+    render(){
+        return(
+            <nav>
+                <div class="nav-wrapper black">
+                <a href="#!" class="brand-logo left"><i className='fa fa-dashboard'></i></a>
+                <ul class="right" style={{paddingRight:10}}>
+                    <li>
+                        <Link to='/about' children='About'/>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-)
+                </div>
+            </nav>
+        )
+    }
+
+}
+
