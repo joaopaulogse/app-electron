@@ -1,4 +1,8 @@
 import React, {Component} from 'react'
+import 'modules/bootstrap/dist/css/bootstrap.min.css'
+import 'modules/font-awesome/css/font-awesome.css'
+import Header from '../templates/header'
+import {db} from '../../database'
 export default class App extends Component{
     
     constructor(props){
@@ -7,13 +11,20 @@ export default class App extends Component{
     }
     
     janela(){
-        console.log("clicked")
+        db.find({}, (err, docs)=>{
+            docs.map(v=>{
+                console.log(v.credito)
+            })
+        })
     }
     
     render(){
         return (
             <div>
-                <button onClick={()=>this.janela()}>Botao</button>
+                <Header />
+                <button className='btn btn-primary' onClick={()=>this.janela()}>
+                    <i className='fa fa-google'></i>
+                </button>
             </div>
         )
     }

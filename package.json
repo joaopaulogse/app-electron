@@ -33,6 +33,13 @@
     "webpack-dev-server": "^2.9.0"
   },
   "dependencies": {
-    "concurrently": "^3.5.0"
+    "bootstrap": "^3.3.7",
+    "concurrently": "^3.5.0",
+    "firebase": "^4.4.0",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "nedb": "^1.8.0",
+    "underscore": "^1.8.3"
   }
 }

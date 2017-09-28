@@ -38,5 +38,8 @@ module.exports = {
             test:/\.(woff|woff2|svg|png|gif|eot|ttf)$/,
             loader:'file-loader'
         }]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin("styles.css")
+    ]
 }
