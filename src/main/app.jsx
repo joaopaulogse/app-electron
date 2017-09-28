@@ -11,10 +11,21 @@ export default class App extends Component{
     }
     
     janela(){
-        db.find({}, (err, docs)=>{
-            docs.map(v=>{
-                console.log(v.credito)
-            })
+        let data = {
+            nome:'Janeiro/17',
+            month:1,
+            year:2017,
+            credts:[
+                {nome:'salario empresa', value:6700},
+                {nome:'salario professor', value:2700},
+            ],
+            debts:[
+                {nome:'conta de agua', value:80, status:'PAGO'},
+                {nome:'conta de luz', value:70, status:'AGENDADO'},
+            ]
+        }
+        db.find({nome:'Janeiro/17'}, (err, docs)=>{
+            console.log(docs)
         })
     }
     

@@ -1,4 +1,6 @@
 {"nome":"joao","_id":"UpeHpkZ1LWadqKFZ"}
 {"credito":{"nome":"salario","value":123456},"_id":"WTiack2vSXIOkr14"}
 {"credito":[{"nome":"salario","value":123456},{"nome":"remedio","value":12},{"nome":"enem","value":230}],"_id":"bXGNWVJOq8NxC8uY"}
+{"nome":"Janeiro/17","month":1,"year":2017,"credts":[{"nome":"salario empresa","value":6700},{"nome":"salario professor","value":2700}],"debts":[{"nome":"conta de agua","value":80,"status":"PAGO"},{"nome":"conta de luz","value":70,"status":"AGENDADO"}],"_id":"oglpXqUoa141hxLY"}
+{"nome":"Janeiro/17","month":1,"year":2017,"credts":[{"nome":"salario empresa","value":6700},{"nome":"salario professor","value":2700}],"debts":[{"nome":"conta de agua","value":80,"status":"PAGO"},{"nome":"conta de luz","value":70,"status":"AGENDADO"}],"_id":"q66oKNsbSTCA4S12"}
 {"credito":{"nome":"salario","value":123456},"_id":"uFvqpgbBicOLOhv2"}

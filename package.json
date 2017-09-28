@@ -33,8 +33,10 @@
     "webpack-dev-server": "^2.9.0"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "bootstrap": "^3.3.7",
     "concurrently": "^3.5.0",
+    "electron-reload": "^1.2.1",
     "firebase": "^4.4.0",
     "font-awesome": "^4.7.0",
     "lodash": "^4.17.4",

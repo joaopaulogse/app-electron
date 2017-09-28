@@ -1,9 +1,18 @@
 import React from 'react'
 import {render} from 'react-dom'
 
-import App from './main/app'
+import {createStore, applyMiddleware} from 'redux'
+import {Provider} from 'react-redux'
 
-import {dialog} from 'electron'
+import multi from 'redux-multi'
+import promise from 'redux-promise'
+import thunk from 'redux-thunk'
+
+import App from './main/app'
+import reducers from './main/reducers'
+const store = applyMiddleware(multi, promise, thunk)(createStore)(reducers)
 render(
-    <App /> 
+    <Provider store={store}>
+        <App /> 
+    </Provider>
 , document.getElementById('app'))
