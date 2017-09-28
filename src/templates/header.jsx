@@ -9,7 +9,7 @@ export default class Header extends Component{
         return(
             <nav>
                 <div class="nav-wrapper black">
-                <a href="#!" class="brand-logo left"><i className='fa fa-dashboard'></i></a>
+                <a href="#!" class="brand-logo left" style={{paddingLeft:20}}><i className='fa fa-dashboard'></i></a>
                 <ul class="right" style={{paddingRight:10}}>
                     <li>
                         <Link to='/about' children='About'/>
